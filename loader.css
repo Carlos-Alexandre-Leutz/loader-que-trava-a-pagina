@@ -1,0 +1,60 @@
+.loader4 {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: -200px;
+  padding: 0px;
+  border-radius: 100%;
+  border: 10px solid;
+  border-top-color: yellow;
+  border-bottom-color: #e6e6e6;
+  border-left-color: yellow;
+  border-right-color: #e6e6e6;
+  -webkit-animation: loader4 1s ease-in-out infinite;
+  animation: loader4 1s ease-in-out infinite;
+}
+
+@keyframes loader4 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader4 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.login100-form-avatar {
+  background-color: #fff;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.login100-form-avatar img {
+  width: 100%;
+}
+
+#text-rotate {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=loader.css.map */

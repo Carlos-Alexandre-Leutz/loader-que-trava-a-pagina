@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loader.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+
+    <div style="width: 100px; margin: auto">
+        <button style="width: 100px;  margin-top: 100px; border: none; border-radius: 10px ;" id="btn-realizar">realizar</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="realizar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div>
+                <span class="login100-form-avatar">
+                        <img src="Mascote.png" alt="AVATAR">
+                    </span>
+                <div class="loader4">
+
+                </div>
+
+                <div id="text-rotate">Caregando Arquivos </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script>
+        $('#btn-realizar').click(function() {
+            $('#realizar').modal('show')
+            primeiro();
+        });
+
+        function primeiro() {
+            document.getElementById('text-rotate').innerHTML = 'Fazendo upload do(s) arquivo(s)'
+            setTimeout('segundo()', 10000);
+
+        };
+
+        function segundo() {
+            document.getElementById('text-rotate').innerHTML = 'Sabia que nos economizamos toneladas de papel e  Co2 com as assinaturas digitas'
+            setTimeout('terceiro()', 10000);
+        };
+
+        function terceiro() {
+            document.getElementById('text-rotate').innerHTML = 'Não sabe o que é asinatura digital Clique aqui'
+            setTimeout('quarto()', 15000);
+
+        };
+
+        function quarto() {
+            document.getElementById('text-rotate').innerHTML = 'Pasando um café '
+            setTimeout('quinto()', 5000);
+
+        };
+
+        function quinto() {
+            document.getElementById('text-rotate').innerHTML = ' Lendo documento'
+            setTimeout('sexto()', 10000);
+
+        };
+
+        function sexto() {
+            document.getElementById('text-rotate').innerHTML = 'Contando os caracteres'
+            setTimeout('setimo()', 5000);
+
+        }
+
+        function setimo() {
+            document.getElementById('text-rotate').innerHTML = 'Calculando laudas'
+            setTimeout('quinto()', 5000);
+
+        }
+    </script>
+
+</body>
+
+</html>
